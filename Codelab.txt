@@ -1,0 +1,269 @@
+***
+Your First Program in Kotlin (1)
+
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	println("Hello, world!")
+}
+
+Output:
+Hello, world!
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (2)
+
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	println("Hello, Android!")
+}
+
+Output:
+Hello, Android!
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (3)
+
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	//perintah di bawah akan mencetak 2 statement
+	println("Hello, Android!")
+	println("Hello, Android!")
+}
+
+Output:
+Hello, Android!
+Hello, Android!
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (4)
+
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	println("Today is sunny!")
+}
+
+Output: 
+Today is sunny!
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (5)
+
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	println("1")
+    	println("2")
+    	println("3")
+}
+
+Output:
+1
+2
+3
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (5)
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	println("I'm")
+    	println("learning")
+	println("Kotlin!")
+}
+
+Output:
+I'm
+learning
+Kotlin!
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (6)
+//fungsi main sebagai entrypoint pada program
+fun main() {
+    //println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    println("Monday")
+    println("Tuesday")
+    println("Wednesday")
+    println("Thursday")
+    println("Friday")
+}
+
+Output:
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (7)
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	println("Tomorrow is rainy")
+}
+
+Output:
+Tomorrow is rainy
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (8)
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	println("There is a chance of snow")
+}
+Output:
+There is a chance of snow
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (9)
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya   
+ 	println("Cloudy")
+    	println("Partly Cloudy")
+    	println("Windy")
+}
+Output:
+Cloudy
+Partly Cloudy
+Windy
+--------------------------------------------------------------------------------------
+Your First Program in Kotlin (9)
+//fungsi main sebagai entrypoint pada program
+fun main() {
+	//println merupakan perintah untuk mencetak statement yang ada di dalamnya
+    	println("How's the weather today?")
+}
+Output:
+How's the weather today?
+***
+Create and use variables in Kotlin (1)
+//fungsi main sebagai entrypoint pada program
+fun main() {
+    	val count: Int = 2 //variabel bernama count dg tipe data integer bernilai 2
+    	println(count) //mencetak value dari variabel count
+}
+
+Output:
+2
+--------------------------------------------------------------------------------------
+Create and use variables in Kotlin (2)
+//fungsi main sebagai entrypoint pada program
+fun main() {
+    	val unreadCount = 5 
+    	val readCount = 100
+	//melakukan operasi penjumlahan dari 2 variabel yang telah didefinisikan dengan ${..+..}
+    	println("You have ${unreadCount + readCount} total messages in your inbox.")
+}
+Output:
+You have 105 total messages in your inbox.
+--------------------------------------------------------------------------------------
+Create and use variables in Kotlin (3)
+fun main() {
+    val numberOfPhotos = 100
+    val photosDeleted = 10
+    println("$numberOfPhotos photos")
+    println("$photosDeleted photos deleted")
+    println("${numberOfPhotos - photosDeleted} photos left")
+}
+--------------------------------------------------------------------------------------
+Create and use variables in Kotlin (4)
+fun main() {
+    var cartTotal = 0
+    println("Total: $cartTotal")
+
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+--------------------------------------------------------------------------------------
+Create and use variables in Kotlin (5)
+fun main() {
+    var count = 10
+    println("You have $count unread messages.")
+    count-- //decrement operator yang bernilai -1
+    println("You have $count unread messages.")
+}
+--------------------------------------------------------------------------------------
+Create and use variables in Kotlin (6)
+fun main() {
+    val trip1: Double = 3.20
+    val trip2: Double = 4.10
+    val trip3: Double = 1.72
+    val totalTripLength: Double = trip1 + trip2 + trip3 //menjumlahkan 3 variabel
+    println("$totalTripLength miles left to destination")
+}
+--------------------------------------------------------------------------------------
+Create and use variables in Kotlin (7)
+fun main() {
+    val nextMeeting = "Next meeting: "
+    val date = "January 1"
+    val reminder = nextMeeting + date + " at work"
+    println(reminder) //mencetak hasil dari variabel reminder
+}
+--------------------------------------------------------------------------------------
+Create and use variables in Kotlin (8)
+fun main() {
+    val notificationsEnabled: Boolean = false
+    println("Are notifications enabled? " + notificationsEnabled)
+}
+--------------------------------------------------------------------------------------
+Create and use variables in Kotlin (9)
+/**
+ * This program displays the number of messages
+ * in the user's inbox.
+ */
+fun main() {
+    // Create a variable for the number of unread messages.
+    var count = 10
+    println("You have $count unread messages.")
+
+    // Decrease the number of messages by 1.
+    count--
+    println("You have $count unread messages.")
+}
+***
+Practice Problems: Kotlin Basics
+
+
+fun main() {
+    println("Use the val keyword when the value doesn't change.")
+    println("Use the var keyword when the value can change.")
+    println("When you define a function, you define the parameters that can be passed to it.")
+    println("When you call a function, you pass arguments for the parameters.")
+}
+--------------------------------------------------------------------------------------
+fun main() { 
+    println("New chat message from a friend")
+}
+--------------------------------------------------------------------------------------
+fun main() {
+    val discountPercentage = 20
+    val item = "Google Chromecast"
+    val offer = "Sale  - Up to $discountPercentage% discount off $item! Hurry Up!" 
+    println(offer)
+}
+--------------------------------------------------------------------------------------
+fun main() {
+    val numberOfAdults = 20
+    val numberOfKids = 30
+    val total = numberOfAdults + numberOfKids //melakukan operasi penjumlahan
+    println("The total party size is: $total")
+}
+--------------------------------------------------------------------------------------
+fun main() {
+    //mendeklarasikan variabel
+    val firstNumber = 10
+    val secondNumber = 5
+    val thirdNumber = 8
+    
+    val result = add(firstNumber, secondNumber)
+    val anotherResult = subtract(firstNumber, thirdNumber)
+
+    println("$firstNumber + $secondNumber = $result")
+    println("$firstNumber - $thirdNumber = $anotherResult")
+}
+//add function menerima 2 variabel dengan tipe data Int
+fun add(firstNumber: Int, secondNumber: Int): Int {
+    return firstNumber + secondNumber
+}
+
+fun subtract(firstNumber: Int, secondNumber: Int): Int {
+    return firstNumber - secondNumber
+}
